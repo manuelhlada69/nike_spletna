@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(#ffffff, #9198e5);
+    margin-bottom: 41px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+    height: 120px;
+    line-height: 120px;
+    z-index: 100;
+}
+
+.leva {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo img {
+    width: 100px;
+}
+
+.menu_efekt ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 30px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.menu_efekt .link_border {
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    background: #000;
+    transition: .4s ease-in-out;
+}
+
+.menu_efekt ul li a:hover~.link_border {
+    width: 30px;
+}
+
+.zgornji_menu {
+    display: none;
+}
+
+.vozicek_mali {
+    display: none;
+}
+
+.item_2 canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 0.1;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    max-width: 1000px;
+    width: 100%;
+    z-index: 20;
+}
+
+.just_do_it p {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(-50% -50%);
+    width: 200px;
+    line-height: 100px;
+    font-size: 100px;
+    font-weight: 600;
+    opacity: 0.1;
+    z-index: 100;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    z-index: 100;
+}
+
+.leva_stran {
+    width: 50%;
+    padding-left: 70px;
+    padding-top: 40px;
+}
+
+.leva_stran .napis_zgornji p {
+    font-size: 4.2vw;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+
+.crta hr {
+    border: 1px solid #222;
+    width: 200px;
+    margin: 25px 0 35px 0;
+}
+
+.leva_stran .napis_spodnji p {
+    font-family: 'Average', serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.vozicek {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px 0 0;
+}
+
+.kosarica_button {
+    font-weight: 600;
+    width: 130px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.cena {
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 500;
+}
+
+.desna_stran {
+    width: 50%;
+    position: relative;
+    height: 85vh;
+}
+
+.forsiceslika_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-70%, -70%) rotate(-35deg);
+
+}
+
+.vozicek_button {
+    position: absolute;
+    right: 90px;
+    bottom: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.napis_zgornji img {
+    width: 100px;
+    height: 100px;
+    margin-left: 6px;
+}
+
+.napis_zgornji {
+    display: flex;
+}
+
+.shop_box {
+    display: flex;
+}
+
+.shop_item_container1 {
+    position: relative;
+    background: #cfcfcf;
+    width: 230px;
+    height: 140px;
+    border-radius: 40px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+}
+
+.shop_item_container2 {
+    position: relative;
+    background: #cfcfcf;
+    width: 230px;
+    height: 140px;
+    border-radius: 40px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.shop_item_container3 {
+    position: relative;
+    background: #cfcfcf;
+    width: 230px;
+    height: 140px;
+    border-radius: 40px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.imeS {
+    position: absolute;
+    top: 43%;
+    left: 12%;
+}
+
+.cena_malih_solnov {
+    font-family: Impact;
+    font-weight: 400;
+    width: 60px;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cena_malih_solnov h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.solni_slika {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 130px;
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+.vozicek_mali2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    position: absolute;
+    border-radius: 10px;
+    left: 150px;
+    position: absolute;
+    top: 60%;
+    left: 68%;
+}
+
+.vozicek_mali2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.kosarica_button:hover {
+    transform: scale(1.1);
+}
+
+.bx {
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.shop_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-links {
+    position: absolute;
+    right: 0;
+    top: -85px;
+
+}
+
+.right-links a {
+    margin-right: 10px;
+}

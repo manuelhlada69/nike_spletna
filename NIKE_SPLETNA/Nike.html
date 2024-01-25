@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike. Just do it.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="slikca.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="body_items">
+        <div class="item_2">
+            <canvas id="canvas" width="800" height="330"></canvas>
+            <script>
+                const c = document.getElementById("canvas");
+                const ctx = c.getContext("2d");
+
+                ctx.lineWidth = 2;
+
+                ctx.beginPath();
+                ctx.moveTo(197, 70);
+                ctx.bezierCurveTo(128, 236, 229, 216, 331, 197);
+                ctx.bezierCurveTo(375, 185, 625, 112, 792, 71);
+                ctx.bezierCurveTo(789, 84, 540, 175, 263, 300);
+                ctx.moveTo(263, 300);
+                ctx.bezierCurveTo(118, 370, 0, 249, 197, 70);
+                ctx.stroke();
+                ctx.fill();
+            </script>
+        </div>
+        <div class="just_do_it">
+            <p>Just
+                Do
+                It
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="leva">
+                <div class="nav_logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="menu_efekt">
+                    <ul>
+                        <li>
+                            <a href="#" class="link">DOMOV</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">OTROCI</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">MOŠKI</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">ŽENSKI</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="desna">
+                <div class="vozicek_mali">
+                    <i class="bx bx-cart"></i>
+                </div>
+                <div class="napis">
+
+                    <div class="zgornji_menu" id="zgornji_menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="link">DOMOV</a>
+                                <div class="link_border"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="link">OTROCI</a>
+                                <div class="link_border"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="link">MOŠKI</a>
+                                <div class="link_border"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="link">ŽENSKI</a>
+                                <div class="link_border"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+    <div class="main">
+        <div class="leva_stran">
+            <div class="napis_zgornji">
+                <p>Nike Air Force</p>
+            </div>
+            <div class="crta">
+                <hr>
+            </div>
+            <div class="napis_spodnji">
+                <p>"Uspeh ni podarjen". Je zaslužen rezultat truda, predanosti in neomajne zavezanosti svojim ciljem.
+                </p>
+            </div>
+            <div class="vozicek">
+                <button class="kosarica_button" id="kosara">V košarico</button>
+            </div>
+            <div class="shop_box">
+                <div class="shop_item_container1">
+                    <div class="shoe_img_box">
+                        <img src="2.png" class="solni_slika">
+                    </div>
+                    <div class="imeS">
+                        <h3>Nike<br>Air Max</h3>
+                    </div>
+                    <div class="cena_malih_solnov">
+                        <p>189.99€</p>
+                    </div>
+                    <div class="vozicek_mali2" id="kosara">
+                        <i class="bx bx-cart"></i>
+                    </div>
+                </div>
+                <div class="shop_item_container2">
+                    <div class="shoe_img_box">
+                        <img src="1.png" class="solni_slika">
+                    </div>
+                    <div class="imeS">
+                        <h3>Nike <br>Air Jordan</h3>
+                    </div>
+                    <div class="cena_malih_solnov">
+                        <p>179.99€</p>
+                    </div>
+                    <div class="vozicek_mali2" id="kosara">
+                        <i class="bx bx-cart"></i>
+                    </div>
+                </div>
+                <div class="shop_item_container3">
+                    <div class="shoe_img_box">
+                        <img src="4.png" class="solni_slika">
+                    </div>
+                    <div class="imeS">
+                        <h3>Nike <br>Impact</h3>
+                    </div>
+                    <div class="cena_malih_solnov">
+                        <p>249.99€</p>
+                    </div>
+                    <div class="vozicek_mali2" id="kosara">
+                        <i class="bx bx-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desna_stran">
+            <img src="3.png" class="forsiceslika_img" alt="">
+            <div class="vozicek_button">
+                <i class="bx bx-cart"></i>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="giftcards.html">GIFT CARDS</a>
+            <a href="findastore.html">FIND A STORE</a>
+            <a href="nikejournal.html">NIKE JOURNAL</a>
+            <a href="becomeamember.html">BECOME A MEMBER</a>
+            <a href="feedback.html">FEEDBACK</a>
+            <a href="promocodes.html">PROMO CODES</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        $('#kosara').click(function (e) {
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Uspešno v košarici',
+                confirmButtonColor: '#9198e5',
+            });
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
